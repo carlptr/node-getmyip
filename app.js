@@ -2,7 +2,7 @@
 
 var http = require('http');
 
-var port = process.argv[2] || 3580;
+var port = process.argv[2] || 80;
 
 http.createServer(function(req, res){
 	res.writeHead(200, { 'Content-Type': 'text/plain'}); 
