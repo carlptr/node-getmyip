@@ -17,4 +17,4 @@ A simple [Node](http://nodejs.org) application to return the IP of the client.
 
 Default port is 80.
 
-Point a brower to http://your-server:[port] and the HTTP reponse will contain your client IP __only__
+Point a brower to http://your-server:[port] and the HTTP reponse will contain your client IP __only__.
