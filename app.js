@@ -1,7 +1,4 @@
-
-
 var http = require('http');
-
 var port = process.argv[2] || 80;
 
 http.createServer(function(req, res){
