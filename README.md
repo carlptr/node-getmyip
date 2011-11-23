@@ -7,12 +7,14 @@ A simple [Node](http://nodejs.org) application to return the IP of the client.
 
 ## Installation
 
-	mkdir GetMyIP
-	cd GetMyIP
-	wget https://github.com/carlptr/node-getmyip/raw/master/app.js
+	$ mkdir GetMyIP
+	$ cd GetMyIP
+	$ wget https://github.com/carlptr/node-getmyip/raw/master/app.js
 
 ## Usage
 
-	node app.js [port]
+	$ node app.js [port]
+
 	Default port is 80.
+
 	Point a brower to http://your-server:[port] and the HTTP reponse will contain your client IP __only__
