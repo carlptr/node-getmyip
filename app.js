@@ -1,5 +1,5 @@
 var http = require('http');
-var port = process.argv[2] || 80;
+var port = process.argv[2] || process.env.PORT || 80;
 
 http.createServer(function(req, res){
 	res.writeHead(200, { 'Content-Type': 'text/plain'}); 
