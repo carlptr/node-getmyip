@@ -7,8 +7,8 @@ A simple [Node](http://nodejs.org) application to return the IP of the client.
 
 ## Installation
 
-	1. Download [application](https://github.com/carlptr/node-getmyip/zipball/master)
-	2. Extract zip to a new directory where you want the app to reside
+1. Download [application](https://github.com/carlptr/node-getmyip/zipball/master)
+2. Extract zip to a new directory where you want the app to reside
 
 ## Usage
 
