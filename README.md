@@ -20,4 +20,5 @@ Point a brower to http://your-server:[port] and the HTTP reponse will contain yo
 
 ## Try it out
 
-Powered by Heroku: [GetMyIP](http://getmyip.heroku.com)
+Powered by [Heroku](http://heroku,com): [GetMyIP](http://getmyip.heroku.com)
+Powered by [Nodester](http://nodester.com): [GetMyIP](http://getmyip.nodester.com)
