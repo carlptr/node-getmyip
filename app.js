@@ -10,27 +10,22 @@ http.createServer(function(req, res){
 		ip = req.connection.remoteAddress;
 
 	var params = url.parse(req.url, true);
-
 	if(params.pathname === '/about'){
 		res.writeHead(302, { 'Location': require('./package.json').homepage});
 		return res.end();
 	}
 
 	var format = params.query.format || 'plain';
-
 	if(format == 'jsonp' && params.query.jsonp) {
 		res.writeHead(200, { 'Content-Type': 'application/json'}); 
-		res.end(params.query.jsonp + '({ip: ' + ip + '})');
+		res.end(params.query.jsonp + '({ip: \'' + ip + '\'})');
 	} else if(format == 'json'){
 		res.writeHead(200, { 'Content-Type': 'application/json'}); 
-		res.end('{ip: ' + ip + '}');
+		res.end('{ip: \'' + ip + '\'}');
 	} else{
 		res.writeHead(200, { 'Content-Type': 'text/plain'}); 
 		res.end(ip);	
 	}
-
-
-	
 }).listen(port);
 
 console.log('Get-IP-Server listening on ' + port);
