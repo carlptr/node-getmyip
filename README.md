@@ -3,7 +3,7 @@ A simple [Node](http://nodejs.org) application to return the IP of the client.
 
 ## Feature
 
-- Return the IP of the client by using the client connection or by using the header _x-forwarded-for_
+- Return the IP of the client by using the client connection or by using the header _x-forwarded-for_ in either plain text, JSON or JSONP format.
 
 ## Installation
 
@@ -16,7 +16,31 @@ A simple [Node](http://nodejs.org) application to return the IP of the client.
 
 Default port is 80. You can specify a different port as command line argument or by defining an environment variable __PORT__.
 
-Point a brower to http://your-server:[port] and the HTTP reponse will contain your client IP __only__.
+To retrieve the IP use one of the following methods depending on the desired format:
+<table>
+	<tr>
+		<th>Format</th>
+		<th>URL</th>
+		<th>Example</th>
+	</tr>
+	<tr>
+		<td>Plain text</td>
+		<td>http://your-server:[port]</td>
+		<td><a href="http://getmyip.nodester.com">Example</a></td>
+	</tr>
+	<tr>
+		<td>JSON</td>
+		<td>http://your-server:[port]/?format=json</td>
+		<td><a href="http://getmyip.nodester.com/?format=json">Example</a></td>
+	</tr>
+	<tr>
+		<td>JSONP</td>
+		<td>http://your-server:[port]/?format=jsonp&jsonp=callback</td>
+		<td><a href="http://getmyip.nodester.com/?format=json&jsonp=callback">Example</a></td>
+	</tr>
+</table>
+
+Point a brower to http://your-server:[port] and the HTTP reponse will contain your client IP __only__. This will return the client IP in text format. To retrieve the IP in JSON format, use http://your-server:[port]/?format=json
 
 ## Try it out
 

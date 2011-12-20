@@ -1,4 +1,5 @@
-var http = require('http');
+var http = require('http'),
+	url = require('url');
 var port = process.argv[2] || process.env.PORT || 80;
 
 http.createServer(function(req, res){
@@ -7,8 +8,29 @@ http.createServer(function(req, res){
 		ip = req.headers["x-forwarded-for"];
 	else
 		ip = req.connection.remoteAddress;
-	res.writeHead(200, { 'Content-Type': 'text/plain'}); 
-	res.end(ip);
+
+	var params = url.parse(req.url, true);
+
+	if(params.pathname === '/about'){
+		res.writeHead(302, { 'Location': require('./package.json').homepage});
+		return res.end();
+	}
+
+	var format = params.query.format || 'plain';
+
+	if(format == 'jsonp' && params.query.jsonp) {
+		res.writeHead(200, { 'Content-Type': 'application/json'}); 
+		res.end(params.query.jsonp + '({ip: ' + ip + '})');
+	} else if(format == 'json'){
+		res.writeHead(200, { 'Content-Type': 'application/json'}); 
+		res.end('{ip: ' + ip + '}');
+	} else{
+		res.writeHead(200, { 'Content-Type': 'text/plain'}); 
+		res.end(ip);	
+	}
+
+
+	
 }).listen(port);
 
 console.log('Get-IP-Server listening on ' + port);
