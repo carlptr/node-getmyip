@@ -40,8 +40,6 @@ To retrieve the IP use one of the following methods depending on the desired for
 	</tr>
 </table>
 
-Point a brower to http://your-server:[port] and the HTTP reponse will contain your client IP __only__. This will return the client IP in text format. To retrieve the IP in JSON format, use http://your-server:[port]/?format=json
-
 ## Try it out
 
 - Powered by [Heroku](http://heroku,com): [GetMyIP](http://getmyip.heroku.com)
