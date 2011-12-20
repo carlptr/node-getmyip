@@ -40,8 +40,8 @@ To retrieve the IP use one of the following methods depending on the desired for
 	</tr>
 </table>
 
-The created JSON output looks like the following
-	{ip: '127.0.0.1'}
+The created JSON output looks like the following:
+```{ip: '127.0.0.1'}```
 
 ## Try it out
 
