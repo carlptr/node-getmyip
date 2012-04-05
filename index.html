@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>Node-getmyip by carlptr</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Node-getmyip</h1>
+        <h2>Simple Node application returning the IP adress of the client</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/carlptr/node-getmyip/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/carlptr/node-getmyip/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/carlptr/node-getmyip" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h2>Feature</h2>
+
+<ul>
+<li>Return the IP of the client by using the client connection or by using the header <em>x-forwarded-for</em> in either plain text, JSON or JSONP format.</li>
+</ul><h2>Installation</h2>
+
+<ol>
+<li>Download <a href="https://github.com/carlptr/node-getmyip/zipball/master">application</a>
+</li>
+<li>Extract zip to a new directory where you want the app to reside</li>
+</ol><h2>Usage</h2>
+
+<pre><code>$ node app.js [port]
+</code></pre>
+
+<p>Default port is 80. You can specify a different port as command line argument or by defining an environment variable <strong>PORT</strong>.</p>
+
+<p>To retrieve the IP use one of the following methods depending on the desired format:</p>
+
+<table>
+<tr>
+<th>Format</th>
+        <th>URL</th>
+        <th>Example</th>
+    </tr>
+<tr>
+<td>Plain text</td>
+        <td>http://your-server:[port]</td>
+        <td><a href="http://getmyip.nodester.com">Example</a></td>
+    </tr>
+<tr>
+<td>JSON</td>
+        <td>http://your-server:[port]/?format=json</td>
+        <td><a href="http://getmyip.nodester.com/?format=json">Example</a></td>
+    </tr>
+<tr>
+<td>JSONP</td>
+        <td>http://your-server:[port]/?format=jsonp&amp;jsonp=callback</td>
+        <td><a href="http://getmyip.nodester.com/?format=json&amp;jsonp=callback">Example</a></td>
+    </tr>
+</table><p>The created JSON output looks like the following:</p>
+
+<p><code>{ip: '127.0.0.1'}</code></p>
+
+<h2>Try it out</h2>
+
+<ul>
+<li>Powered by <a href="http://heroku,com">Heroku</a>: <a href="http://getmyip.heroku.com">GetMyIP</a>
+</li>
+<li>Powered by <a href="http://nodester.com">Nodester</a>: <a href="http://getmyip.nodester.com">GetMyIP</a>
+</li>
+</ul><h2>Author</h2>
+
+<p><a href="/carlptr" class="user-mention">@carlptr</a> (<a href="http://blog.dropalink.net">http://blog.dropalink.net</a>)</p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
