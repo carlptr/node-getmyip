@@ -26,17 +26,17 @@ To retrieve the IP use one of the following methods depending on the desired for
 	<tr>
 		<td>Plain text</td>
 		<td>http://your-server:[port]</td>
-		<td><a href="http://getmyip.nodester.com">Example</a></td>
+		<td><a href="http://getmyip.heroku.com">Example</a></td>
 	</tr>
 	<tr>
 		<td>JSON</td>
 		<td>http://your-server:[port]/?format=json</td>
-		<td><a href="http://getmyip.nodester.com/?format=json">Example</a></td>
+		<td><a href="http://getmyip.heroku.com/?format=json">Example</a></td>
 	</tr>
 	<tr>
 		<td>JSONP</td>
 		<td>http://your-server:[port]/?format=jsonp&jsonp=callback</td>
-		<td><a href="http://getmyip.nodester.com/?format=json&jsonp=callback">Example</a></td>
+		<td><a href="http://getmyip.heroku.com/?format=json&jsonp=callback">Example</a></td>
 	</tr>
 </table>
 
@@ -46,4 +46,3 @@ The created JSON output looks like the following:
 ## Try it out
 
 - Powered by [Heroku](http://heroku,com): [GetMyIP](http://getmyip.heroku.com)
-- Powered by [Nodester](http://nodester.com): [GetMyIP](http://getmyip.nodester.com)
