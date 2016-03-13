@@ -45,4 +45,4 @@ The created JSON output looks like the following:
 
 ## Try it out
 
-- Powered by [Heroku](http://heroku,com): [GetMyIP](http://getmyip.heroku.com)
+- Powered by [Heroku](http://heroku.com): [GetMyIP](http://getmyip.heroku.com)
